@@ -1,0 +1,44 @@
+<TZ_Dismemberments_Firearms2>
+
+<!-- Firearms 2 -->
+
+<!-- All ammo, Headshots -->
+	<append xpath="/items/item[contains(@name, 'mayicammo')]/effect_group[@name='Base Effects']">
+		<passive_effect name="DismemberChance" operation="base_set" value="1" tags="head"/>
+	</append>
+	
+<!-- Individual ammo, Limbs -->
+	
+<!-- 20g Shells -->
+	<append xpath="/items/item[@name='mayicammo20gauge']/effect_group[@name='Base Effects']">
+		<passive_effect name="DismemberChance" operation="base_set" value="0.3" tags="leg,arm"/>
+	</append>
+<!-- Dragonsbreath shells -->
+	<append xpath="/items/item[@name='mayicammoDragonsbreath']/effect_group[@name='Base Effects']">
+		<passive_effect name="DismemberChance" operation="base_set" value="0.15" tags="leg,arm"/>
+	</append>
+<!-- Electric shells -->
+	<append xpath="/items/item[@name='mayicammoElectricshell']/effect_group[@name='Base Effects']">
+		<passive_effect name="DismemberChance" operation="base_set" value="0.15" tags="leg,arm"/>
+	</append>
+<!-- 50cal, M82 -->
+	<append xpath="/items/item[@name='mayicammo50cal']/effect_group[@name='Base Effects']">
+		<passive_effect name="DismemberChance" operation="base_set" value="1" tags="leg,arm"/>
+	</append>
+	<append xpath="/items/item[@name='mayicammo50calSteel']/effect_group[@name='Base Effects']">
+		<passive_effect name="DismemberChance" operation="base_set" value="1" tags="leg,arm"/>
+	</append>
+<!-- 5mm, Chaingun -->
+	<append xpath="/items/item[@name='mayicammo5mm']/effect_group[@name='Base Effects']">
+		<passive_effect name="DismemberChance" operation="base_set" value="0.25" tags="leg,arm"/>
+	</append>
+	<append xpath="/items/item[@name='mayicammo5mmSteel']/effect_group[@name='Base Effects']">
+		<passive_effect name="DismemberChance" operation="base_set" value="0.25" tags="leg,arm"/>
+	</append>
+<!-- Golden Bullet (Golden Gun) -->
+	<append xpath="/items/item[@name='mayicammoGoldenbullet']/effect_group[@name='Base Effects']">
+		<passive_effect name="DismemberChance" operation="base_set" value="1" tags="leg,arm"/>
+	</append>
+	
+
+</TZ_Dismemberments_Firearms2>
